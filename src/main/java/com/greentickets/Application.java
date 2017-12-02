@@ -34,22 +34,18 @@ public class Application {
 
             con.setAutoCommit(false); //Now, transactions won't be committed automatically.
 
-            //Query.CSVtoSQL("agency", con);
-            //Query.CSVtoSQL("calendar", con);
-            //Query.CSVtoSQL("calendar_dates", con);
-            //Query.CSVtoSQL("fare_attributes", con);
-            //Query.CSVtoSQL("fare_rules", con);
-            //Query.CSVtoSQL("feed_info", con);
-            //Query.CSVtoSQL("routes", con);
-            /*
-
-
+            Query.CSVtoSQL("trips", con);
+            Query.CSVtoSQL("agency", con);
+            Query.CSVtoSQL("calendar", con);
+            Query.CSVtoSQL("calendar_dates", con);
+            Query.CSVtoSQL("fare_attributes", con);
+            Query.CSVtoSQL("fare_rules", con);
+            Query.CSVtoSQL("feed_info", con);
             Query.CSVtoSQL("routes", con);
             Query.CSVtoSQL("shapes", con);
             Query.CSVtoSQL("stop_times", con);
             Query.CSVtoSQL("stops", con);
-            Query.CSVtoSQL("trips", con);
-*/
+
             con.commit(); //commit all the transactions
 
 
